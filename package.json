@@ -1,0 +1,39 @@
+{
+  "name": "devstash",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/cli.js",
+  "bin": {
+    "devstash": "./dist/cli.js",
+    "ds": "./dist/cli.js"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.22.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.6.0",
+    "commander": "^15.0.0",
+    "dist": "link:dist",
+    "fs-extra": "^11.4.0",
+    "handlebars": "^4.7.9"
+  }
+}
